@@ -1,0 +1,201 @@
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.color-dark{
+  color: black;
+}
+.active{
+  color: #4285f4 !important;
+}
+.bell{
+  font-size: 20px;
+}
+
+.home{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 700px;
+}
+.Hheader{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 700px;
+}
+.back-image{
+  height: 100%;
+  width: 100%;
+  background-image: url('./assets/img/bg-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -5;
+}
+.cloud-bottom{
+  background-image: url('./assets/img/cloud-bottom.svg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  min-height: 600px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background-position: bottom center;
+  z-index: -1;
+  overflow-y: hidden;
+}
+.plane{
+  background-image: url('./assets/img/flight.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 123px;
+  width: 500px;
+  position: absolute;
+  top: 35%;
+  left: 170px;
+  z-index: -3;
+  transition: 0.5s;
+}
+@media screen and (max-width: 1370px){
+  .plane{
+    height: 83px;
+    width: 337px;
+    top: 14%;
+    left: 41px;
+  }
+}
+.cloud-piece{
+  background-image: url('./assets/img/cloud-piece.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 490px;
+  width: 668px;
+  position: fixed;
+  top: 17%;
+  left: -70px;
+  z-index: -4;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.form{
+  max-width: 700px;
+}
+.input-custom{
+  border: 0;
+  outline: 0;
+  transition: 0.5s;
+  border-radius: 3px;
+  border: 1px solid rgba(250, 248, 248, 0);
+  padding: 7px;
+}
+.input-custom:focus{
+  border: 1px solid green;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #0067df;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+select{
+  height: 41px;
+  border-radius: 3px !important;
+}
+.font-size-5{
+  font-size: 20px;
+}
+.flat{
+  background: url('./assets/img/flat.png');
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  z-index: -1;
+  margin-top: 50px;
+}
+.Hbottom{
+  background-image: url('./assets/img/bg-img.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card{
+  border-radius: 5px;
+  background-color: white;
+  max-width: 500px !important;
+}
+.flip{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.row{
+  margin-left:0 ;
+  margin-right:0 ;
+}
+.calender{
+  position: relative;
+}
+
+.canlender-badge{
+  position: absolute;
+  color: grey;
+  font-size: 25px;
+  right: -285px;
+  top: 7px;
+}
